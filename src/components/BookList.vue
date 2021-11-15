@@ -4,8 +4,8 @@
         <ul>
             <book-item
                 v-for='book in books'
-                :book='book'
                 :key='book.id'
+                :book='book'
             >{{book.title}}:{{book.author}}</book-item>
         </ul>
         <br><hr>
@@ -15,8 +15,7 @@
 
 <script>
 import BookItem from './BookItem';
-import BookForm from './BookForm'
-
+import BookForm from './BookForm';
 export default {
     name: 'BookList',
     data() {
